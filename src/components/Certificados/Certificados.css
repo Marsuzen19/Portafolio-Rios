@@ -1,0 +1,231 @@
+/* =========================================
+SECCIÓN
+========================================= */
+
+.certificados-section {
+
+padding: 5rem 5%;
+
+background-color: var(--color-dark-secundario);
+
+font-family: var(--font-main);
+}
+
+/* =========================================
+CONTENEDOR
+========================================= */
+
+.certificados-container {
+
+max-width: 1200px;
+
+margin: auto;
+}
+
+/* =========================================
+HEADER
+========================================= */
+
+.section-header {
+
+text-align: center;
+
+margin-bottom: 3rem;
+}
+
+.section-subtitle {
+
+display: inline-block;
+
+font-size: 0.8rem;
+
+font-weight: 700;
+
+letter-spacing: 2px;
+
+color: var(--color-principal);
+
+margin-bottom: 1rem;
+}
+
+.main-title {
+
+font-size: 2.5rem;
+
+font-weight: 700;
+
+color: var(--color-white);
+
+margin-bottom: 1rem;
+}
+
+.section-description {
+
+max-width: 600px;
+
+margin: auto;
+
+font-size: 1rem;
+
+line-height: 1.6;
+
+color: var(--text-light);
+}
+
+/* =========================================
+GRID
+========================================= */
+
+.certificados-grid {
+
+display: grid;
+
+grid-template-columns:
+repeat(auto-fit, minmax(280px, 1fr));
+
+gap: 1.5rem;
+}
+
+/* =========================================
+CARD
+========================================= */
+
+.certificado-card {
+
+background-color: var(--color-dark);
+
+padding: 2rem;
+
+border-radius: 16px;
+
+border: 1px solid rgba(255,255,255,0.05);
+
+text-align: center;
+
+transition: var(--transition);
+}
+
+.certificado-card:hover {
+
+transform: translateY(-5px);
+
+background-color: rgba(255,255,255,0.03);
+}
+
+/* =========================================
+ICONO PDF
+========================================= */
+
+.pdf-icon {
+
+font-size: 4rem;
+
+margin-bottom: 1rem;
+}
+
+/* =========================================
+TEXTOS
+========================================= */
+
+.certificado-title {
+
+font-size: 1.3rem;
+
+font-weight: 700;
+
+color: var(--color-white);
+
+margin-bottom: 0.8rem;
+}
+
+.certificado-description {
+
+font-size: 0.95rem;
+
+line-height: 1.6;
+
+color: var(--text-light);
+
+margin-bottom: 1.5rem;
+}
+
+/* =========================================
+BOTONES
+========================================= */
+
+.certificado-buttons {
+
+display: flex;
+
+justify-content: center;
+
+gap: 1rem;
+}
+
+/* BOTÓN GENERAL */
+
+.btn-certificado {
+
+padding: 0.7rem 1.2rem;
+
+border-radius: 10px;
+
+font-size: 0.9rem;
+
+font-weight: 600;
+
+text-decoration: none;
+
+transition: var(--transition);
+}
+
+/* VER PDF */
+
+.btn-view {
+
+background-color: var(--color-principal);
+
+color: var(--color-white);
+}
+
+.btn-view:hover {
+
+background-color: var(--color-hover);
+}
+
+/* DESCARGAR */
+
+.btn-download {
+
+border: 1px solid var(--color-principal);
+
+color: var(--color-principal);
+}
+
+.btn-download:hover {
+
+background-color: rgba(139,92,246,0.1);
+}
+
+/* =========================================
+RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+.main-title {
+
+font-size: 2rem;
+}
+
+.certificado-buttons {
+
+flex-direction: column;
+}
+
+.btn-certificado {
+
+width: 100%;
+}
+
+}

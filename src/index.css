@@ -1,0 +1,85 @@
+/*
+VARIABLES GLOBALES
+*/
+:root {
+
+  /* =========================================
+  COLORES PRINCIPALES
+  ========================================= */
+
+  --color-principal: #8b5cf6;
+  --color-secundario: #cbd5e1;
+  --color-dark: #111827;
+  --color-dark-secundario: #0b0f19;
+  --color-white: #ffffff;
+
+  /* Hover y efectos */
+  --color-hover: #a78bfa;
+
+  /* Sombras */
+  --shadow-navbar: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-mobile: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+  /* =========================================
+  TIPOGRAFÍA
+  ========================================= */
+
+  --font-main: 'Arial', sans-serif;
+
+  /* =========================================
+  ESPACIADOS
+  ========================================= */
+
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+
+  /* =========================================
+  BORDES
+  ========================================= */
+
+  --radius-sm: 2px;
+  --radius-md: 8px;
+
+  /* =========================================
+  TRANSICIONES
+  ========================================= */
+
+  --transition: all 0.3s ease;
+
+  /* =========================================
+GRADIENTES
+========================================= */
+
+--gradient-main:
+linear-gradient(
+135deg,
+#8b5cf6 0%,
+#6d28d9 100%
+);
+
+/* =========================================
+TEXTOS
+========================================= */
+
+--text-light: #94a3b8;
+
+/* =========================================
+EFECTOS
+========================================= */
+
+--blur: blur(10px);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--color-dark-secundario);
+  color: var(--color-white);
+  font-family: var(--font-main);
+}
+}
+

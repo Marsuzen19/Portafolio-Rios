@@ -1,0 +1,121 @@
+/* =========================================
+ESTILOS GENERALES DEL NAVBAR
+========================================= */
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1.5rem 5%;
+background-color: var(--color-dark);
+color: var(--color-white);
+
+position: sticky;
+top: 0;
+z-index: 1000;
+
+box-shadow: var(--shadow-navbar);
+font-family: var(--font-main);
+}
+
+/* =========================================
+ESTILOS DEL LOGO
+========================================= */
+
+.navbar-logo {
+font-size: 1.8rem;
+font-weight: 700;
+cursor: pointer;
+letter-spacing: 1px;
+}
+
+.text-cyan {
+color: var(--color-principal);
+}
+
+/* =========================================
+ESTILOS DE LOS ENLACES (DESKTOP)
+========================================= */
+
+.navbar-links {
+display: flex;
+gap: 2.5rem;
+}
+
+.navbar-links a {
+color: var(--color-secundario);
+text-decoration: none;
+font-size: 1rem;
+font-weight: 500;
+
+transition: var(--transition);
+}
+
+.navbar-links a:hover {
+color: var(--color-hover);
+transform: translateY(-2px);
+}
+
+/* =========================================
+BOTÓN HAMBURGUESA
+========================================= */
+
+.navbar-toggle {
+display: none;
+flex-direction: column;
+cursor: pointer;
+gap: 6px;
+}
+
+.bar {
+width: 25px;
+height: 3px;
+
+background-color: var(--color-white);
+
+border-radius: var(--radius-sm);
+
+transition: var(--transition);
+}
+
+/* =========================================
+MEDIA QUERY: MÓVIL Y TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+.navbar-toggle {
+display: flex;
+}
+
+.navbar-links {
+
+display: none;
+
+flex-direction: column;
+
+position: absolute;
+
+top: 100%;
+left: 0;
+
+width: 100%;
+
+background-color: var(--color-dark-secundario);
+
+padding: 2rem 0;
+
+text-align: center;
+
+gap: 2rem;
+
+box-shadow: var(--shadow-mobile);
+}
+
+/* Menú abierto */
+
+.navbar-links.open {
+display: flex;
+}
+
+}
