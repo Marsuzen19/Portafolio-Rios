@@ -1,0 +1,63 @@
+.servicios {
+  padding: var(--spacing-lg);
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.servicios-titulo {
+  font-size: 2rem;
+  color: var(--color-principal);
+  margin-bottom: var(--spacing-md);
+}
+
+.servicios-intro {
+  color: var(--text-light);
+  margin-bottom: var(--spacing-lg);
+  font-size: 0.95rem;
+}
+
+/* CONTENEDOR */
+.servicios-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  .servicios-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* TARJETA */
+.servicio-card {
+  background: var(--color-dark);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-mobile);
+  transition: var(--transition);
+}
+
+.servicio-card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+/* ICONO */
+.icono {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* TEXTO */
+.servicio-card h3 {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-white);
+}
+
+.servicio-card p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
